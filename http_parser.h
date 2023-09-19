@@ -443,6 +443,8 @@ int http_body_is_final(const http_parser *parser);
 /* Change the maximum header size provided at compile time. */
 void http_parser_set_max_header_size(uint32_t size);
 
+void http_urldecode(char * dest, const char *url);
+
 #ifdef __cplusplus
 }
 #endif
